@@ -16,6 +16,8 @@ app.set 'view engine', 'ejs'
 app.get '/', (request, response) ->
   response.render 'index'
 
+app.post '/users', (request, response) ->
+  response.render 'user_index'
 
 
 	
