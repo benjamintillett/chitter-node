@@ -1,28 +1,3 @@
-<h1>Welcome to Makers IDE</h1>
+<h1>Chitter Node</h1>
 
-<form class="new-file">
-<input type="text" name="file-name">
-<button class="add-file">+ New File</button>
-</form>
-
-<ul class="files">
-	<% files.forEach(function(file){ %>
-		<li>
-			<span><%- file %></span>
-			<a class="edit" href="/edit?file=<%- file %>">
-				<button class="edit">Edit</button>
-			</a>
-			<button class="delete">Delete</button>
-		</li>
-	<% }) %>
-</ul>
-
-<template id='new-file-template'>
-<li>{{filename}}
-	<a class="edit" href="/edit?file={{filename}}">
-		<button class="edit">Edit</button>
-	</a>
-	<button class="delete">Delete</button>
-</li>
-</template>
 
